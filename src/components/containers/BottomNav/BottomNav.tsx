@@ -4,7 +4,9 @@ const BottomNav = () =>  {
 
     return (
     <>
-    <BottomNavStyle></BottomNavStyle>
+    <BottomNavStyle>
+        <img src="" alt="" />
+    </BottomNavStyle>
     </>
     )
     
