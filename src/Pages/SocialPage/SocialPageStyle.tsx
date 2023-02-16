@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SocialPageStyle = styled.button`
+export const SocialPageStyle = styled.section`
     
 
 `
