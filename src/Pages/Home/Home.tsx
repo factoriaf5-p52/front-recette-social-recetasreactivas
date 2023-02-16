@@ -1,10 +1,11 @@
-import { HomeStyle } from './homeStyle'
+import { HomeStyle } from './HomeStyle'
 
 const Home = () =>  {
 
     return (
     <>
-    <HomeStyle></HomeStyle>
+    <HomeStyle>Home
+    </HomeStyle>
     </>
     )
     

@@ -4,7 +4,7 @@ const Profile = () =>  {
 
     return (
     <>
-    <ProfileStyle></ProfileStyle>
+    <ProfileStyle>Profile</ProfileStyle>
     </>
     )
     

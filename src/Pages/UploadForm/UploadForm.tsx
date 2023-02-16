@@ -4,7 +4,7 @@ const UploadForm = () =>  {
 
     return (
     <>
-    <UploadFormStyle></UploadFormStyle>
+    <UploadFormStyle>Uploeadederete</UploadFormStyle>
     </>
     )
     

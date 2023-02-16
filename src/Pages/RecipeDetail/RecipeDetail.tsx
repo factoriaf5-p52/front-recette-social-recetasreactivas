@@ -4,7 +4,7 @@ const RecipeDetail = () =>  {
 
     return (
     <>
-    <RecipeDetailStyle></RecipeDetailStyle>
+    <RecipeDetailStyle>Recipefefefe</RecipeDetailStyle>
     </>
     )
     

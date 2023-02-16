@@ -4,7 +4,7 @@ const SocialPage = () =>  {
 
     return (
     <>
-    <SocialPageStyle></SocialPageStyle>
+    <SocialPageStyle>Socialpagerefe</SocialPageStyle>
     </>
     )
     

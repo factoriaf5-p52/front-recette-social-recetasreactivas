@@ -4,7 +4,7 @@ const Login = () =>  {
 
     return (
     <>
-    <LoginStyle></LoginStyle>
+    <LoginStyle>LoHIN</LoginStyle>
     </>
     )
     

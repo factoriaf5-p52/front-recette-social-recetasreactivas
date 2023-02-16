@@ -4,7 +4,7 @@ const ShoppingList = () =>  {
 
     return (
     <>
-    <ShoppingListStyle></ShoppingListStyle>
+    <ShoppingListStyle>Shoppinglistoristo</ShoppingListStyle>
     </>
     )
     

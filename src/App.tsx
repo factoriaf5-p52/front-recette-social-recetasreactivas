@@ -11,7 +11,7 @@ function App() {
       <Routes>
       <Route element={<Layout/>}>
 
-       <Route path="/" element={<Home/>}/>
+       <Route path="/Home" element={<Home/>}/>
        <Route path="/List" element={<List/>}/>
        <Route path="/Login" element={<Login/>}/>
        <Route path="/Profile" element={<Profile/>}/>
@@ -20,8 +20,6 @@ function App() {
        <Route path="/Statistic" element={<Statistic/>}/>
        <Route path="/SocialPage" element={<SocialPage/>}/>
        <Route path="/UploadRecipe" element={<UploadForm/>}/>
-       
-      <h1>Hola recetas</h1>
       </Route>
       </Routes>
 

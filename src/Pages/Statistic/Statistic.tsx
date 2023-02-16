@@ -4,7 +4,7 @@ const Statistic = () =>  {
 
     return (
     <>
-    <StatisticStyle></StatisticStyle>
+    <StatisticStyle>Statisticistic</StatisticStyle>
     </>
     )
     

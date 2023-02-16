@@ -4,7 +4,7 @@ const List = () =>  {
 
     return (
     <>
-    <ListStyle></ListStyle>
+    <ListStyle>List</ListStyle>
     </>
     )
     
