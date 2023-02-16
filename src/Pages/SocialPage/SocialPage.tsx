@@ -1,4 +1,5 @@
 import BottomNav from '../../components/containers/BottomNav/BottomNav'
+import { FoodTypeCard } from '../../components/elements'
 import { SocialPageStyle } from './SocialPageStyle'
 
 const SocialPage = () =>  {
@@ -7,7 +8,7 @@ const SocialPage = () =>  {
     <>
         <SocialPageStyle>Socialpagerefe</SocialPageStyle>
 
-        
+        <FoodTypeCard/>
         <BottomNav />
     </>
 

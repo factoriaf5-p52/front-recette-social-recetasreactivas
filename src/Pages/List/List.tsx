@@ -1,10 +1,14 @@
+import { SearchBar } from '../../components/elements'
 import { ListStyle } from './listStyle'
 
 const List = () =>  {
 
     return (
     <>
-    <ListStyle>List</ListStyle>
+    <ListStyle>
+    <SearchBar/>
+    
+    </ListStyle>
     </>
     )
     
