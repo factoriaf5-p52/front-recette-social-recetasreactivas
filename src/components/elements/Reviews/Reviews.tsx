@@ -1,6 +1,6 @@
 import { ReviwsStyle } from './reviewsStyle'
 
-const Reviws = () =>  {
+const Reviews = () =>  {
 
     return (
     <>
@@ -9,5 +9,5 @@ const Reviws = () =>  {
     )
     
 }
-export default Reviws
+export default Reviews
 
