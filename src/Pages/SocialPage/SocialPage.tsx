@@ -1,11 +1,16 @@
+import BottomNav from '../../components/containers/BottomNav/BottomNav'
 import { SocialPageStyle } from './SocialPageStyle'
 
 const SocialPage = () =>  {
 
     return (
     <>
-    <SocialPageStyle>Socialpagerefe</SocialPageStyle>
+        <SocialPageStyle>Socialpagerefe</SocialPageStyle>
+
+        
+        <BottomNav />
     </>
+
     )
     
 }
