@@ -1,4 +1,5 @@
 export { default as Button }  from './Button/Button';
+export { default as ButtonAcceptStyle } from './Button/BottonAccept/ButtonAccept'
 export { default as ChipClear } from './Chips/ChipClear/ChipClear';
 export { default as ChipGreen } from './Chips/ChipGreen/ChipGreen';
 export { default as FoodTypeCard } from './FoodTypeCard/FoodTypeCard';
