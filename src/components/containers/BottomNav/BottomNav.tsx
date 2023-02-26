@@ -21,7 +21,8 @@ const BottomNav = () =>  {
             <div className='nav-icon'>    
                 <img src={socialGray} alt="social" />
                 <p>social</p>
-            </div>        
+            </div>       
+             
             <div className='nav-icon'>    
                 <img src={userGray} alt="profile" />
                 <p>profile</p>

@@ -1,10 +1,27 @@
-import { ReviwsStyle } from './reviewsStyle'
+import StarIcon from '../../icons/Stars'
+import { ReviewsStyle, StarsContainer } from './ReviewsStyle'
+
 
 const Reviews = () =>  {
 
     return (
     <>
-    <ReviwsStyle></ReviwsStyle>
+    <ReviewsStyle>     
+    <StarsContainer>
+        <StarIcon fill='var(--color-highlights)' />
+        <StarIcon fill='var(--color-highlights)' />
+        <StarIcon fill='var(--color-highlights)' />
+        <StarIcon fill='var(--color-highlights)' />
+        <StarIcon fill='var(--color-white-secondary)' />
+    </StarsContainer>
+   
+
+
+
+    <p>+850 reviews</p>    
+    </ReviewsStyle>
+
+
     </>
     )
     

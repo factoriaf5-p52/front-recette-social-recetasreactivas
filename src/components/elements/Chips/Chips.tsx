@@ -1,13 +1,14 @@
 import { ChipsStyle } from './chipsStyle'
 
-const Chips = () =>  {
+const Chip = () =>  {
 
     return (
+        
     <>
     <ChipsStyle></ChipsStyle>
     </>
     )
     
 }
-export default Chips
+export default Chip
 

@@ -2,33 +2,17 @@ import styled from "styled-components";
 
 export const FoodTypeCardStyle = styled.div`
 background-color: #FFFFFF;
+padding: 2em;
 border-radius: 25px;
-height: 39dvh;
-width: 34dvh;
-display:grid;
-grid-template-areas: 
-"rating rating rating blank blank user"
-"rating rating rating blank blank user"
-"image image image image image image"
-"image image image image image image"
-"image image image image image image"
-"image image image image image image"
-"image image image image image image"
-"image image image image image image"
-"title title title title title title"
-"text text text text text text";
+width: 340px;
+height: 397px;
+display: flex;
+justify-content: center;
 align-items: center;
-justify-items: stretch;
+flex-direction: column;
 margin:0 auto;
 
-.rating{
-    display: flex;
-    flex-direction:row;
-    grid-area: rating;
-    img {
-        height: 2dvh;
-    }
-}
+
 
 .user{
     display:flex;
@@ -40,13 +24,14 @@ margin:0 auto;
 }
 
 .foodImgCard>img{
-    height: 22dvh;
-    width: 16dvh;
-    grid-area:image;
+    width: 310px;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
     object-fit: cover;
     border-radius: 10px;
-    align-items: center;
-    justify-content: center;
+  
  }
 
 

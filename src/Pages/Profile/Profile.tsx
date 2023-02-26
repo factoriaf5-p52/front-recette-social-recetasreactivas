@@ -5,6 +5,7 @@ const Profile = () =>  {
     return (
     <>
     <ProfileStyle>Profile</ProfileStyle>
+
     </>
     )
     

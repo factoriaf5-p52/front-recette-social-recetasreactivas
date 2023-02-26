@@ -1,10 +1,13 @@
+import { Reviews } from '../../elements/index'
 import { SocialCardStyle } from './socialCardStyle'
 
 const SocialCard = () =>  {
 
     return (
     <>
-    <SocialCardStyle></SocialCardStyle>
+    <SocialCardStyle>
+    <Reviews/>
+    </SocialCardStyle>
     </>
     )
     
