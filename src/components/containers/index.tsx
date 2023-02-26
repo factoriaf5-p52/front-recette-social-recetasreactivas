@@ -3,4 +3,4 @@ export { default as ShoppingListContainer } from './ShoppingListContainer/Shoppi
 export { default as Recipe } from './Recipe/Recipe'
 export { default as BottomNav } from './BottomNav/BottomNav'
 export { default as Nav } from './Nav/Nav'
-
+export { default as TopNav } from './TopNav/TopNav'

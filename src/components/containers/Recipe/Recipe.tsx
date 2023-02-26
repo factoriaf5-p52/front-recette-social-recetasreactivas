@@ -8,7 +8,8 @@ const Recipe = () =>  {
     return (
     <>
     <RecipeStyle>
-        <button><img src={loveGray} alt="Add to Fav" /></button>
+        <button>
+            <img src={loveGray} alt="Add to Fav" /></button>
         <img src={foodPic} alt="Spagetti Bolognese" />
         <div>
             <img src= {backArrow}alt="Go back" />

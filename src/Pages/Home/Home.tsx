@@ -7,9 +7,6 @@ const Home = () =>  {
     <>
     <HomeStyle>Home
     </HomeStyle>
-   
-    <Nav/>
-
     </>
     )
     

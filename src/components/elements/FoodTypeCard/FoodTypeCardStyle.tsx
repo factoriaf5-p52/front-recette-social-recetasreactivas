@@ -14,16 +14,15 @@ margin:0 auto;
 
 
 
-.user{
-    display:flex;
-    flex-direction: row;
-    grid-area: user;
-    img{
-        height:3dvh;
-    }
-}
 
-.foodImgCard>img{
+.text{
+    grid-area:title;
+    justify-content: center;
+
+}
+`
+export const Cover = styled.div`
+img {
     width: 310px;
     height: 190px;
     display: flex;
@@ -31,26 +30,34 @@ margin:0 auto;
     align-items: center;    
     object-fit: cover;
     border-radius: 10px;
-  
- }
-
-
-.text{
-    grid-area:title;
-    justify-content: center;
-    span{
-        margin-top:2dvh;
-        display:flex;
-        flex-direction:row;
-        align-content: center;
-        justify-content: space-around;
-        p{
-            background-color: #D8ECFE;
-            border-radius: 10px;
-            width:7dvh;
-            
-        }
-    }
 }
+` 
 
-`
+export const Tags = styled.div`
+margin-top:10px;
+width: 100%;
+display:flex;
+flex-direction:row;
+align-content: flex-start;
+justify-content: space-around;
+` 
+
+export const Top = styled.div`
+display: flex;
+align-items: center;
+gap: 1rem;
+` 
+export const Profile = styled.div`
+display: flex;
+align-items: center;
+gap: 1rem;
+margin-right: 1em;
+` 
+
+export const Title = styled.h1`
+display: block;
+width: 100%;
+margin-top: 10px;
+font-weight: 700;
+font-size: 20px;
+` 

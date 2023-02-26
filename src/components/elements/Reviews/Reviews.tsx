@@ -1,5 +1,5 @@
 import StarIcon from '../../icons/Stars'
-import { ReviewsStyle, StarsContainer } from './ReviewsStyle'
+import { ReviewsStyle, StarsContainer } from './reviewsStyle'
 
 
 const Reviews = () =>  {

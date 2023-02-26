@@ -1,25 +1,30 @@
-import { FoodTypeCardStyle } from './FoodTypeCardStyle'
+import { Cover, FoodTypeCardStyle, Profile, Tags, Title, Top } from './FoodTypeCardStyle'
 import foodPic from '../../../assets/foodPic.svg'
 import { Reviews, Chip } from '../index'
+import  userImg  from '../../../assets/userImg.svg'
 
 const FoodTypeCard = () =>  {
 
     return (
     <>
     <FoodTypeCardStyle>
-    <Reviews/>
-        <div className='foodImgCard'>
+        <Top>
+        <Reviews/>
+        <Profile>
+            <p>@pepitococina</p>
+            <img src={userImg} alt="user photo" />
+        </Profile>
+        </Top>
+        <Cover>
             <img src={foodPic} alt="Spaghetti Boognese" />
-        </div>
-        <div className='text'>
-            <h2>Fideos a la Bolognesa</h2>
-            <span>
-                <p>Italian</p>
-                <p>Dinner</p>
-                <p>+More</p>
-                <Chip/>
-            </span>
-        </div>
+        </Cover>
+
+        <Title>Fideos a la Bolognesa</Title>
+        <Tags>
+            <Chip color='var(--color-white-primary)' label="Italian"/>
+            <Chip color='var(--color-white-primary)' label="Dinner"/>
+            <Chip color='var(--color-white-primary)' label="+More"/>
+        </Tags>
     </FoodTypeCardStyle>
     </>
     )
