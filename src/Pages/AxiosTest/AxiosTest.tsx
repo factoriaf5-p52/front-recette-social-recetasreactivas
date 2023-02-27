@@ -1,4 +1,3 @@
-import { Axios } from "axios"
 import React, { useState, useEffect } from 'react';
 import recipeServices from "../../services/services"
 
@@ -14,7 +13,7 @@ const AxiosTest = () =>  {
 
     useEffect(() => {
        recipeServices.getAll()
-      .then(response=>setData(response.data));
+      .then(response=>setData(response));
    
     }, []);
 
@@ -22,12 +21,13 @@ const AxiosTest = () =>  {
       <div>
       <h1>Lista de datos</h1>
       <ul>
-        {/* {data.map(item => (
+        {data.length>0 && data.map((item:IData) => (
           <li key={item._id}>{item.title}</li>
-        ))} */}{data}
+        ))}
       </ul>
     </div>
   );
+  
 } 
 
 export default AxiosTest
