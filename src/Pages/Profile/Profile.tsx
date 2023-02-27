@@ -1,11 +1,22 @@
-import { ProfileStyle } from './profileStyle'
+import { RecipePicCard } from '../../components/elements/index'
+import { FeedContainer, Grid, ProfileStyle } from './profileStyle'
 
 const Profile = () =>  {
 
     return (
     <>
-    <ProfileStyle>Profile</ProfileStyle>
-
+    <ProfileStyle>
+        <FeedContainer>
+            <Grid>
+                <RecipePicCard/>
+                <RecipePicCard/>
+                <RecipePicCard/>
+                <RecipePicCard/>
+                <RecipePicCard/>
+                <RecipePicCard/>
+            </Grid>
+        </FeedContainer>
+    </ProfileStyle>
     </>
     )
     
