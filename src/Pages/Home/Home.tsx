@@ -1,20 +1,14 @@
-import { ChipClearStyle} from '../../components/elements/Chips/ChipClear/chipClearStyle'
-import { ChipGreenStyle } from '../../components/elements/Chips/ChipGreen/chipGreenStyle'
-
+import { Button } from '../../components/elements'
 import { HomeStyle } from './homeStyle'
+
 
 const Home = () =>  {
 
     return (
     <>
-    <HomeStyle>Home
+    <HomeStyle>
+        <Button/>
     </HomeStyle>
-    <ChipClearStyle>
-            hola
-    </ChipClearStyle>
-    <ChipGreenStyle>
-            hola
-    </ChipGreenStyle>
     </>
     )
     
