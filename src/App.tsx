@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Layout from './Pages/Layout';
-import { Home,List, Login ,Profile, RecipeDetail, ShoppingList, SocialPage, Statistic, UploadForm } from './Pages/index';
+import { Home,List, Login ,Profile, RecipeDetail, ShoppingList, SocialPage, Statistic, UploadForm, AxiosTest} from './Pages/index';
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Routes>
       <Route element={<Layout/>}>
-
+       <Route path="/AxiosTest" element={<AxiosTest/>}/>
        <Route path="/Home" element={<Home/>}/>
        <Route path="/List" element={<List/>}/>
        <Route path="/Login" element={<Login/>}/>

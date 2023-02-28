@@ -1,15 +1,13 @@
-import { ChipsStyle } from './chipsStyle'
+import React from "react";
+import { StyledChip } from "./ChipStyle"
 
-const Chips = () =>  {
+interface ChipProps {
+    label: string;
+    color?: string;
+  }
 
-    return (
-    <>
-    <ChipsStyle>
-        
-    </ChipsStyle>
-    </>
-    )
+  export const Chip: React.FC<ChipProps> = ({ label, color = '#007bff' }) => (
+    <StyledChip color={color}>{label}
     
-}
-export default Chips
-
+    </StyledChip>
+  );

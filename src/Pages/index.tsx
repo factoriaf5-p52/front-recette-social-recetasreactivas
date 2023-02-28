@@ -8,4 +8,7 @@ export { default as SocialPage }  from './SocialPage/SocialPage';
 export { default as Statistic }  from './Statistic/Statistic';
 export { default as UploadForm }  from './UploadForm/UploadForm';
 
+export { default as AxiosTest }  from './AxiosTest/AxiosTest';
+
+
  
