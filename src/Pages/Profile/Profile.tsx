@@ -1,10 +1,37 @@
-import { ProfileStyle } from './profileStyle'
+import { CartButton, RecipePicCard } from '../../components/elements/index'
+import { FeedContainer, Grid, ProfileStyle, TopNav } from './profileStyle'
+import Tab, { TabItem } from './Tab/Tab'
+import  userImg  from '../../../src/assets/userImg.svg'
+import Nav from '../../components/containers/Nav/Nav'
 
 const Profile = () =>  {
-
+const onTabSelected = (index: any) => {
+        console.log(index);
+      };
     return (
     <>
-    <ProfileStyle>Profile</ProfileStyle>
+    <ProfileStyle>
+        <TopNav>
+        <img src={userImg} alt="" />
+        <CartButton/>
+        </TopNav>
+        <FeedContainer>
+        <Tab onTabSelected={onTabSelected}>
+            <TabItem>Recipes</TabItem>
+            <TabItem>Menus</TabItem>
+            <TabItem>Groups</TabItem>
+        </Tab>            
+      <Grid>
+            <RecipePicCard/>
+            <RecipePicCard/>
+            <RecipePicCard/>
+            <RecipePicCard/>
+            <RecipePicCard/>
+            <RecipePicCard/>
+      </Grid>
+        </FeedContainer>
+    </ProfileStyle>
+    <Nav/>
     </>
     )
     

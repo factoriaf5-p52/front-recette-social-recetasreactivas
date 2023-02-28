@@ -1,13 +1,19 @@
 import { ButtonStyle } from './buttonStyle'
 
-const BottomNav = () =>  {
+type ButtonProps = {
+    label: string;
+  }
+
+const Button = ({ label }: ButtonProps) =>  {
 
     return (
     <>
-    <ButtonStyle></ButtonStyle>
+    <ButtonStyle>
+    {label}
+    </ButtonStyle>
     </>
     )
     
 }
-export default BottomNav
+export default Button
 
