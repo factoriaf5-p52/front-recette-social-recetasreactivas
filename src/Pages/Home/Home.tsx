@@ -7,7 +7,9 @@ const Home = () =>  {
     return (
     <>
     <HomeStyle>
-        <Button/>
+        <figure className='src/assets/cookieLogo.svg'></figure>
+
+        
     </HomeStyle>
     </>
     )
