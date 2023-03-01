@@ -1,18 +1,18 @@
-import { Nav } from '../.././components/containers/index'
 import { Button, LoginButton } from '../../components/elements/index'
-import { BackgroundGif, HomeNav, HomeStyle } from './homeStyle'
+import { LandingNav, LandingStyle } from './LandingStyle'
 import logoIcon from './../../assets/logoIcon.svg'
+import { Link } from 'react-router-dom'
 
 
 
-const Home = () =>  {
+const Landing = () =>  {
 
     return (
     <>
-    <HomeNav>
-            <LoginButton/>            
-    </HomeNav>
-    <HomeStyle>
+    <LandingNav>
+           <LoginButton/>                   
+    </LandingNav>
+    <LandingStyle>
         
         
         <div>
@@ -21,17 +21,17 @@ const Home = () =>  {
             </p>
 
         </div>
-        <Button label={'Bon appetit'}/>
+        <Link to="/SocialPage"><Button label={'Bon appetit'}/></Link>
         <footer>
         <img src={logoIcon} alt="" />
         </footer>
         
         
-    </HomeStyle>
+    </LandingStyle>
         
     </>
     )
     
 }
-export default Home
+export default Landing
 

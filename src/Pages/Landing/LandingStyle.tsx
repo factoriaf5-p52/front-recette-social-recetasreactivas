@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import huevoFrito from './../../assets/huevoFrito.gif'
 
-export const HomeStyle = styled.div`
+export const LandingStyle = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -23,7 +23,7 @@ width: 100%;
         margin:0 auto
         }
 `
-export const HomeNav = styled.div`
+export const LandingNav = styled.div`
     display:flex;
     justify-content:flex-end;
 `
