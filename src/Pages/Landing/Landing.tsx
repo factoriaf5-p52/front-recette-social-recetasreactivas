@@ -21,7 +21,7 @@ const Landing = () =>  {
             </p>
 
         </div>
-        <Link to="/SocialPage"><Button label={'Bon appetit'}/></Link>
+        <Link to="/SocialPage"><Button label={'Bon appetit'} type={undefined}/></Link>
         <footer>
         <img src={logoIcon} alt="" />
         </footer>

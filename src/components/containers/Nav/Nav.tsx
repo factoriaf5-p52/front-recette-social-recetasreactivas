@@ -13,7 +13,7 @@ const Nav = (props: Props) => {
     <NavStyle>
     <NavContainer>
         <Link to="/Home" style={{ textDecoration: 'none' }}><NavLi><AiFillHome fill="#b6d6f3"/>Home</NavLi></Link>
-        <Link to="/asdf" style={{ textDecoration: 'none' }}><NavLi><GiChefToque fill="#b6d6f3"/>Explore</NavLi></Link>
+        <Link to="/Explore" style={{ textDecoration: 'none' }}><NavLi><GiChefToque fill="#b6d6f3"/>Explore</NavLi></Link>
         <Link to="/SocialPage" style={{ textDecoration: 'none' }}><NavLi><FaBook fill="#b6d6f3"/>Recipes</NavLi></Link>
         <Link to="/Profile" style={{ textDecoration: 'none' }}><NavLi><FaUserAlt fill="#b6d6f3"/>Profile</NavLi></Link>
     </NavContainer>

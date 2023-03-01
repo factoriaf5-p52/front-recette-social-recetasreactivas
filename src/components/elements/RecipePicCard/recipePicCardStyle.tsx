@@ -6,7 +6,7 @@ text-align: center;
 width: 165px;
 height: 165px;
 overflow: hidden;  
-border-radius: 20px;
+border-radius: 20px 20px 20px 20px;
 img {
 width: 100%;
 height: 100%;

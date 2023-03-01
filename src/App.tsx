@@ -2,7 +2,7 @@ import React, { FormEventHandler, useState } from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
 import Layout from './Pages/Layout';
-import { NotFound, Landing,List, Login ,Profile, RecipeDetail, ShoppingList, SocialPage, Statistic, UploadForm, AxiosTest} from './Pages/index';
+import { Explore,NotFound, Landing,List, Login ,Profile, RecipeDetail, ShoppingList, SocialPage, Statistic, UploadForm, AxiosTest} from './Pages/index';
 import { authService } from './services/auth.service';
 
 function App() {
@@ -46,6 +46,7 @@ function App() {
        <Route path="/ShoppingList" element={<ShoppingList/>}/>
        <Route path="/Statistic" element={<Statistic/>}/>
        <Route path="/SocialPage" element={<SocialPage/>}/>
+       <Route path="/Explore" element={<Explore/>}/>
        <Route path="/UploadRecipe" element={<UploadForm/>}/>
        <Route path="*" element={<NotFound/>}/>
       </Route>
