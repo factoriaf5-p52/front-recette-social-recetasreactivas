@@ -38,7 +38,7 @@ background: #C4E2FF;
 border-radius: 40px;
 
 `
-export const Form = styled.div`
+export const Form = styled.form`
 position: relative;
 display: flex;
 flex-direction: column;

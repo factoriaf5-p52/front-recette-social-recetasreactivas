@@ -4,7 +4,7 @@ type ButtonProps = {
     label: string;
   }
 
-const Button = ({ label }: ButtonProps) =>  {
+const Button = ({ label}: ButtonProps) =>  {
 
     return (
     <>

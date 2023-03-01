@@ -1,12 +1,38 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import React, { FormEventHandler, useState } from 'react';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
 import Layout from './Pages/Layout';
-import { NotFound ,Home,List, Login ,Profile, RecipeDetail, ShoppingList, SocialPage, Statistic, UploadForm, AxiosTest} from './Pages/index';
-
-
+import { NotFound, Home,List, Login ,Profile, RecipeDetail, ShoppingList, SocialPage, Statistic, UploadForm, AxiosTest} from './Pages/index';
+import { authService } from './services/auth.service';
 
 function App() {
+
+  const navigate = useNavigate()
+
+  const[loggedInUser, setLoggedInUser]=useState<string|null>(null)
+
+  const handleSubmit:FormEventHandler<HTMLFormElement> = async (e)=>{
+    e.preventDefault;
+
+    
+    try {
+      const result = await authService.login({
+        email:'',
+        password:''
+      })
+
+      localStorage.setItem('token',result.data.access_token)
+
+      setLoggedInUser(localStorage.getItem('token'))
+
+      navigate('/Profile')
+
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+
   return (
     <div className="App">
       <Routes>
@@ -14,7 +40,7 @@ function App() {
        <Route path="/AxiosTest" element={<AxiosTest/>}/>
        <Route path="/Home" element={<Home/>}/>
        <Route path="/List" element={<List/>}/>
-       <Route path="/Login" element={<Login/>}/>
+       <Route path="/auth/login" element={<Login handleSubmit = {handleSubmit}/>}/>
        <Route path="/Profile" element={<Profile/>}/>
        <Route path="/RecipeDetail" element={<RecipeDetail/>}/>
        <Route path="/ShoppingList" element={<ShoppingList/>}/>
