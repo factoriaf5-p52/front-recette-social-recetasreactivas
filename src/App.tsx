@@ -12,7 +12,7 @@ function App() {
   const[loggedInUser, setLoggedInUser]=useState<string|null>(null)
 
   const handleSubmit:FormEventHandler<HTMLFormElement> = async (e)=>{
-    e.preventDefault;
+    e.preventDefault();
 
     
     try {
