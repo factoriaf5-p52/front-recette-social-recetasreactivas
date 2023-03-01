@@ -34,8 +34,8 @@ const Login = (props:Props) =>  {
 
         <Form onSubmit={handleSubmit}>
             <Input  placeholder="Enter your username"/>
-            <Input  placeholder="Password"/>
-           <Button label="Sign In" />
+            <Input  type="password" placeholder="Password"/>
+           <Button label="Sign In" type={"submit"} />
         </Form>
 
 <footer>        

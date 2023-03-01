@@ -1,6 +1,5 @@
-import { Nav } from '../.././components/containers/index'
 import { Button, LoginButton } from '../../components/elements/index'
-import { BackgroundGif, HomeNav, HomeStyle } from './homeStyle'
+import { HomeNav, HomeStyle } from './homeStyle'
 import logoIcon from './../../assets/logoIcon.svg'
 
 
@@ -21,7 +20,7 @@ const Home = () =>  {
             </p>
 
         </div>
-        <Button label={'Bon appetit'}/>
+        <Button type={"submit"} label={'Bon appetit'}/>
         <footer>
         <img src={logoIcon} alt="" />
         </footer>

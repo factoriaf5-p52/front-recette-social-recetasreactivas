@@ -1,15 +1,19 @@
+import { ReactNode } from 'react';
+import { Type } from 'typescript';
 import { ButtonStyle } from './buttonStyle'
 
 type ButtonProps = {
     label: string;
+    type: ReactNode
   }
 
-const Button = ({ label}: ButtonProps) =>  {
+const Button = ({ label, type}: ButtonProps) =>  {
 
     return (
     <>
-    <ButtonStyle>
+    <ButtonStyle >
     {label}
+  
     </ButtonStyle>
     </>
     )

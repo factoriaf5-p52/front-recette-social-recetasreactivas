@@ -1,3 +1,4 @@
+import { type } from 'os';
 import React, { InputHTMLAttributes } from 'react';
 import { InputStyle } from './inputStyle'
 
@@ -6,11 +7,11 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   }
   
 
-const Input: React.FC<InputProps> = ({ placeholder  }) => {
+const Input: React.FC<InputProps> = ({ placeholder, type  }) => {
     return (
     <>
 
-    <InputStyle placeholder={placeholder} />
+    <InputStyle placeholder={placeholder} type={type} />
     </>
     )
     
