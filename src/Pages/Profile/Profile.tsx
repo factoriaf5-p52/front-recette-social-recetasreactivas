@@ -12,7 +12,7 @@ const onTabSelected = (index: any) => {
     <>
     <ProfileStyle>
         <TopNav>
-        <img src={userImg} alt="" />
+        <img src={userImg} alt="User profile avatar" />
         <CartButton/>
         </TopNav>
         <FeedContainer>

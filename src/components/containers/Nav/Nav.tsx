@@ -1,22 +1,24 @@
-import { NavContainer, NavIcon, NavLi, NavStyle } from './NavStyle'
-import ProfileIcon from '../../icons/ProfileIcon'
-import React, { useState } from 'react'
+import { GiChefToque,  } from "react-icons/gi";
+import { AiFillHome,  } from "react-icons/ai";
+import { FaUserAlt, FaBook } from "react-icons/fa";
+import { NavContainer,  NavLi, NavStyle } from "./NavStyle"
 
-const Nav = () =>  {
+import React from 'react'
+import { Link } from "react-router-dom";
 
-    return ( 
-   
+type Props = {}
+
+const Nav = (props: Props) => {
+  return (
     <NavStyle>
-        <NavContainer >
-            <NavIcon  >
-                <ProfileIcon  color="blue" width="100" height="100"/>
-                <NavLi>Perfil</NavLi>
-            </NavIcon>
-        </NavContainer>
+    <NavContainer>
+        <Link to="/Home" style={{ textDecoration: 'none' }}><NavLi><AiFillHome fill="#b6d6f3"/>Home</NavLi></Link>
+        <Link to="/asdf" style={{ textDecoration: 'none' }}><NavLi><GiChefToque fill="#b6d6f3"/>Explore</NavLi></Link>
+        <Link to="/SocialPage" style={{ textDecoration: 'none' }}><NavLi><FaBook fill="#b6d6f3"/>Recipes</NavLi></Link>
+        <Link to="/Profile" style={{ textDecoration: 'none' }}><NavLi><FaUserAlt fill="#b6d6f3"/>Profile</NavLi></Link>
+    </NavContainer>
     </NavStyle>
-
-    )
-    
+  )
 }
-export default Nav
 
+export default Nav

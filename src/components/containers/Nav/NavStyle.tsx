@@ -22,6 +22,14 @@ export const NavLi = styled.li`
 color: var(--color-white-secondary);
 font-size: 16px;
 text-decoration: none;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 10px;
+svg{
+    color:red;
+}
 
 `
 export const NavIcon = styled.div`

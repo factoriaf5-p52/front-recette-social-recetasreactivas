@@ -1,5 +1,5 @@
-import { TopNav } from '../../components/containers/index'
-import BottomNav from '../../components/containers/BottomNav/BottomNav'
+import { Nav, TopNav } from '../../components/containers/index'
+
 import { FoodTypeCard } from '../../components/elements/index'
 import { SocialPageStyle } from './SocialPageStyle'
 
@@ -14,7 +14,7 @@ const SocialPage = () =>  {
                 <FoodTypeCard/>
                 <FoodTypeCard/>
             </SocialPageStyle>
-        <BottomNav />
+        <Nav />
     </>
     )
     
