@@ -7,7 +7,7 @@ interface ChipProps {
   }
 
   export const Chip: React.FC<ChipProps> = ({ label, color = '#007bff' }) => (
-    <StyledChip color={color}>{label}
+    <StyledChip color={color} > {label}
     
     </StyledChip>
   );
