@@ -23,7 +23,7 @@ const UploadForm = () =>  {
             <Input  placeholder="Instructions"/>
             <Input  placeholder="Ingredients"/>
             <Input  placeholder="Add Image"/>
-           <Button label="Send" />
+           <Button label="Send" type={"submit"} />
         </Form>
 
 <footer>        

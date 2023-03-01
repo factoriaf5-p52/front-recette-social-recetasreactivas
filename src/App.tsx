@@ -17,15 +17,15 @@ function App() {
     
     try {
       const result = await authService.login({
-        email:'',
-        password:''
+        email:'juancoookie@recipes.com',
+        password:'123456'
       })
 
       localStorage.setItem('token',result.data.access_token)
 
       setLoggedInUser(localStorage.getItem('token'))
 
-      navigate('/Profile')
+      navigate('/Profile',{replace:true});
 
     } catch (error) {
       console.log(error);
