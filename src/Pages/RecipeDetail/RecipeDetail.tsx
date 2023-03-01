@@ -1,9 +1,9 @@
-import { RecipeDetailStyle, Top, First, Time, Text, Field } from './RecipeDetailStyle';
+import { RecipeDetailStyle, Title, Top, First, Time, Text, Field, Recipe, Ingridients } from './RecipeDetailStyle';
 // import foodPic from '../../assets/foodPic.svg'
 import loveGray from '../../assets/loveGray.svg';
 // import { Reviews } from '../../elements/Reviews'
 import backArrow from '../../assets/backArrow.svg';
-import { Chip, Reviews } from '../../components/elements';
+import { Chip, FoodTypeCard, Reviews } from '../../components/elements';
 //import foodPic from '../../assets/foodPic.svg'
 
 function RecipeDetail(): JSX.Element {
@@ -22,28 +22,31 @@ function RecipeDetail(): JSX.Element {
                     </h2>
                 </First>
                 <Reviews/>
-                <div className='Rating'>
+                {/* <div className='Rating'> */}
                     {/* Rating goes here */}
-                </div>
+                {/* </div> */}
                 <Time>
-                    <h3 className=''>Time</h3>
+                    <Title>Time</Title>
                     <p>40 min</p>
                 </Time>
-                <section>
-                    <h3 className=''>Ingredients</h3>
+                <Ingridients>
+                    <Title>Ingredients</Title>
                         <Chip color='var(--color-white-primary)' label="Pasta +" />
                         <Chip color='var(--color-white-primary)' label="Tomato +" />
                         <Chip color='var(--color-white-primary)' label="Meat +" />
                         <Chip color='var(--color-white-primary)' label="Grarlic +" />
-                </section>
-                <Text>
-                    <h3 className=''>Instructions</h3>
-                    <Field>
-                        Heat 1 tablespoon of the olive oil in a large, heavy saucepan until shimmering. 
-                        Add the onion, carrot, celery, and pancetta and cook over moderate heat, stirring occasionally, until the vegetables are softened but not browned, about 8 minutes. 
-                        Scrape the vegetable mixture into a large bowl.
-                    </Field>
-                </Text>
+                </Ingridients>
+                <Recipe>
+                    <Title>Instructions</Title>
+                        <Field>
+                            <Text>
+                                Heat 1 tablespoon of the olive oil in a large, heavy saucepan until shimmering. 
+                                Add the onion, carrot, celery, and pancetta and cook over moderate heat, stirring occasionally, until the vegetables are softened but not browned, about 8 minutes. 
+                                Scrape the vegetable mixture into a large bowl.
+                            </Text>
+                        </Field>
+                        
+                </Recipe>
             </RecipeDetailStyle>
             {/* <FoodTypeCard /> */}
         </>

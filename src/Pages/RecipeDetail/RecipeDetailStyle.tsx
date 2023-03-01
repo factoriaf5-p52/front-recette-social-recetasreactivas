@@ -22,33 +22,52 @@ export const RecipeDetailStyle = styled.div`
 export const Top = styled.div`
     background-image: url(${foodPic}) no-repeat fixed top;
     background-size: cover;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1rem; */
 `
 
 export const First = styled.div`
-display: flex;
-align-items: center;
-gap: 1rem;
-margin-right: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 1em;
 ` 
+
+export const Title = styled.h1`
+display: block;
+width: 100%;
+margin-top: 10px;
+font-weight: 700;
+font-size: 20px;
+`
 
 export const Time = styled.div`
-display: flex;
-align-items: flex-start;
-gap: 1rem;
+    
 ` 
-export const Text = styled.div`
-gap: 1rem;
 
-` 
+export const Ingridients = styled.div`
+
+`
+
+export const Recipe = styled.div`
+
+`
 
 export const Field = styled.div`
     background-color: #FFFFFF;
     border-radius: 25px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    object-fit: cover;
     
-    gap: 1rem;
-    margin: 1rem;
 
+
+` 
+export const Text = styled.div`
+    
+    margin: 2em;
+    
 ` 
