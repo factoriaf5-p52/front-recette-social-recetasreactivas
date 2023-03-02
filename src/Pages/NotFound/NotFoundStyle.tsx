@@ -7,8 +7,17 @@ align-items: center;
 justify-content: center;
 height: 70vh;
 flex-direction: column;
-background: url(${NotFoundImg});
 background-repeat: no-repeat;
 background-position: center;
-margin-top: 5%;
+margin-top: 5em;
+padding: 20px;
+img {
+    margin: 20px;
+}
+
 `
+
+export const TextContainer =styled.div`
+margin: 20px;
+
+`   

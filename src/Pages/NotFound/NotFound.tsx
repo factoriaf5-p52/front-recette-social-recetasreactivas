@@ -1,13 +1,22 @@
 import React from 'react'
-import NotFoundImg from '../../assets/NotFound.png'
-import { NotFoundStyle } from './NotFoundStyle'
+import { Link } from 'react-router-dom'
+import notFound from '../../assets/notFound.png'
+import { Button } from '../../components/elements/index'
+import { NotFoundStyle, TextContainer } from './NotFoundStyle'
 
 type Props = {}
 
 const NotFound = (props: Props) => {
   return (
     <NotFoundStyle>
-    <h1>Nothing Here</h1>
+      <img src= {notFound} alt="" />
+    <TextContainer>
+    <h1>Nothing to cook here...</h1>
+    <p>You better go back and see another stuff :( </p>
+    <Link to={'/'}>
+    <Button label={'Go back!'} type={undefined}/>
+    </Link>
+    </TextContainer>
     </NotFoundStyle>
   )
 }
