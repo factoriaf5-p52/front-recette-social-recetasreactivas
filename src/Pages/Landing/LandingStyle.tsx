@@ -6,7 +6,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-color:--color-black;
+color:var(--color-black);
 font-family: 'Poppins', sans-serif;
 background-image: url(${huevoFrito});
 background-repeat: no-repeat;

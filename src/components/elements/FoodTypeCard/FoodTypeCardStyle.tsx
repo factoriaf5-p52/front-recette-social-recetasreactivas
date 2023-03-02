@@ -13,8 +13,6 @@ flex-direction: column;
 margin:0 auto;
 
 
-
-
 .text{
     grid-area:title;
     justify-content: center;

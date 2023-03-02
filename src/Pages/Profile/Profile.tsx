@@ -2,7 +2,7 @@ import { CartButton, RecipePicCard } from '../../components/elements/index'
 import { FeedContainer, Grid, ProfileStyle, TopNav } from './profileStyle'
 import Tab, { TabItem } from './Tab/Tab'
 import  userImg  from '../../../src/assets/userImg.svg'
-import Nav from '../../components/containers/Nav/Nav'
+import Nav from '../../components/Nav/Nav'
 
 const Profile = () =>  {
 const onTabSelected = (index: any) => {

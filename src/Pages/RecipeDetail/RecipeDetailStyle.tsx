@@ -3,20 +3,32 @@ import foodPic from '../../assets/foodPic.svg'
 
 
 export const RecipeDetailStyle = styled.div`
-    //background-color: #FFFFFF;
+    background-image: url(${foodPic})  ;
+    width: 100vw;
+    height: 100vh;
+
+button {
+    position: fixed;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    margin: 2em;
+}
+
+`
+export const CardContainer = styled.div`
     padding: 1.5em;
     border-radius: 25px;
-    width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    justify-content: baseline;
     align-items: center;
     flex-direction: column;
-    margin: auto;
-
+    margin-bottom: 0 ;
+    background-color: var(--color-white-bg);
 
     
-
 `
 
 export const Top = styled.div`

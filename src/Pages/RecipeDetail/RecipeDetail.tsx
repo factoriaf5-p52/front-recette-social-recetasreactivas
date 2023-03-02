@@ -1,22 +1,22 @@
-import { RecipeDetailStyle, Title, Top, First, Time, Text, Field, Recipe, Ingridients } from './RecipeDetailStyle';
+import { RecipeDetailStyle, Title, Top, First, Time, Text, Field, Recipe, Ingridients, CardContainer } from './RecipeDetailStyle';
 // import foodPic from '../../assets/foodPic.svg'
 import loveGray from '../../assets/loveGray.svg';
 // import { Reviews } from '../../elements/Reviews'
 import backArrow from '../../assets/backArrow.svg';
 import { Chip, FoodTypeCard, Reviews } from '../../components/elements';
+import { Link } from 'react-router-dom';
 //import foodPic from '../../assets/foodPic.svg'
 
-function RecipeDetail(): JSX.Element {
+const RecipeDetail = ()=> {
 
     return (
         <>
-            <Top>
-                    {/* <img src={ foodPic } alt="background" /> */}
-                    <button><img src={loveGray} alt="Add to Fav" /></button>
-            </Top>
             <RecipeDetailStyle>
-                <First>
-                    <img src={backArrow} alt="Go back" />
+           
+            <button><img src={loveGray} alt="Add to Fav" /></button>
+            <CardContainer>
+            <First>
+            <Link to="/SocialPage"><img src={backArrow} alt="Go back" /></Link>
                     <h2>
                         Spaghetti Bolognese
                     </h2>
@@ -44,9 +44,10 @@ function RecipeDetail(): JSX.Element {
                                 Add the onion, carrot, celery, and pancetta and cook over moderate heat, stirring occasionally, until the vegetables are softened but not browned, about 8 minutes. 
                                 Scrape the vegetable mixture into a large bowl.
                             </Text>
-                        </Field>
-                        
+                        </Field>  
                 </Recipe>
+            </CardContainer>
+              
             </RecipeDetailStyle>
             {/* <FoodTypeCard /> */}
         </>

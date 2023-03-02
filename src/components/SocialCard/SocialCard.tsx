@@ -1,4 +1,4 @@
-import { Reviews } from '../../elements/index'
+import { Reviews } from '../../components/elements/index'
 import { SocialCardStyle } from './socialCardStyle'
 
 const SocialCard = () =>  {

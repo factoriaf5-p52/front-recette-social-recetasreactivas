@@ -1,21 +1,22 @@
 import styled from "styled-components";
 
 export const ExploreStyle=styled.div`
-gap:1em;
-div{
-    margin-left:1.2em
-
-}
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+gap: 1em;
 
 p{
     text-align:center;
 }
+
+
 span{
     display:grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1em;
-       
-    margin:0 auto;
+    column-gap: 1em;
+    margin: 10px auto;
 }
 
 `
@@ -27,4 +28,8 @@ justify-content: space-between;
 margin: 1.5em;
 align-items: center;
 
+`
+
+export const ChipContainer =styled.div`
+    margin-left: 1em;
 `

@@ -1,8 +1,8 @@
 import { BottomNavStyle } from './bottomNavStyle'
-import  homeGray  from '../../../assets/homeGray.svg'
-import  recipesGray  from '../../../assets/recipesGray.svg'
-import  socialGray  from '../../../assets/socialGray.svg'
-import  userGray  from '../../../assets/userGray.svg'
+import  homeGray  from '../../assets/homeGray.svg'
+import  recipesGray  from '../../assets/recipesGray.svg'
+import  socialGray  from '../../assets/socialGray.svg'
+import  userGray  from '../../assets/userGray.svg'
 
 
 const BottomNav = () =>  {

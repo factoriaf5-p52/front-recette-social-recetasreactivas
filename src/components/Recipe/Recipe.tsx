@@ -1,8 +1,8 @@
 import { RecipeStyle } from './recipeStyle'
-import foodPic from '../../../assets/foodPic.svg'
-import loveGray from '../../../assets/loveGray.svg'
+import foodPic from '../../assets/foodPic.svg'
+import loveGray from '../../assets/loveGray.svg'
 // import { Reviews } from '../../elements/Reviews'
-import backArrow from '../../../assets/backArrow.svg'
+import backArrow from '../../assets/backArrow.svg'
 const Recipe = () =>  {
 
     return (

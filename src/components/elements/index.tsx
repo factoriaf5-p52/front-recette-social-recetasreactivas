@@ -7,4 +7,4 @@ export { default as Reviews } from './Reviews/Reviews';
 export { default as SearchBar } from './SearchBar/SearchBar';
 export { default as LoginButton } from './LoginButton/Login';
 export { default as CartButton } from './CartButton/CartButton';
-
+export { default as ExploreCard } from './ExploreCard/ExploreCard';

@@ -19,7 +19,7 @@ const FoodTypeCard = () =>  {
             <img src={foodPic} alt="Spaghetti Boognese" />
         </Cover>
 
-        <Title>Fideos a la Bolognesa</Title>
+        <Title>Bolognesa pasta</Title>
         <Tags>
             <Chip color='var(--color-white-primary)' label="Italian"/>
             <Chip color='var(--color-white-primary)' label="Dinner"/>
